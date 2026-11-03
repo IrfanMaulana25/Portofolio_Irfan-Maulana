@@ -1,16 +1,19 @@
-# React + Vite
+# Portfolio - Irfan Maulana
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio website yang menampilkan profil, kemampuan, pengalaman, serta berbagai karya di bidang Information Technology dan Creative Multimedia.
 
-Currently, two official plugins are available:
+## LIVE DEMO
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Visit Website:** [Klik di sini untuk melihat Portfolio](https://portofolio-irfan-maulana-nine.vercel.app/)
 
-## React Compiler
+## Built With
+- React.js
+- Vite
+- Tailwind CSS
+- Lucide React
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Author
+**Irfan Maulana**
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- GitHub: [IrfanMaulana25](https://github.com/IrfanMaulana25)
+- Instagram: [@irf4nn__25](https://www.instagram.com/irf4nn__25/)
