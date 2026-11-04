@@ -5,8 +5,6 @@ import {
   Download,
   Sparkles,
   Code2,
-  Camera,
-  Mail
 } from 'lucide-react';
 
 const Home = () => {
@@ -70,43 +68,6 @@ const Home = () => {
                 <Download size={17} />
                 About Me
               </Link>
-
-            </div>
-
-            {/* Social Links */}
-            <div className="flex items-center gap-6 mt-10">
-
-              <span className="text-sm text-gray-500">
-                Find me on
-              </span>
-
-              <a
-                href="https://github.com/"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="GitHub"
-                className="text-gray-400 hover:text-purple-400 transition"
-              >
-                <Code2 size={22} />
-              </a>
-
-              <a
-                href="https://instagram.com/"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Instagram"
-                className="text-gray-400 hover:text-purple-400 transition"
-              >
-                <Camera size={22} />
-              </a>
-
-              <a
-                href="mailto:email@example.com"
-                aria-label="Email"
-                className="text-gray-400 hover:text-purple-400 transition"
-              >
-                <Mail size={22} />
-              </a>
 
             </div>
 

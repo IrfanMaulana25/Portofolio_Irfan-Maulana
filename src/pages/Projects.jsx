@@ -64,11 +64,12 @@ const Projects = () => {
       title: 'Personal Portfolio Website',
       category: 'Personal Project',
       description:
-        'A personal portfolio website showcasing profile information, technical skills, projects, and creative works.',
-      tech: ['React', 'Vite', 'Tailwind CSS'],
-      status: 'In Development',
+        'A personal portfolio website showcasing profile information, technical skills, projects, and creative works in Information Technology and Creative Multimedia.',
+      tech: ['React', 'Vite', 'Tailwind CSS', 'Lucide React'],
+      status: 'Deployed',
       icon: UserRound,
-      link: null,
+      github: 'https://github.com/IrfanMaulana25/Portofolio_Irfan-Maulana',
+      demo: 'https://portofolio-irfan-maulana-nine.vercel.app/',
     },
   ];
 
@@ -169,18 +170,18 @@ const Projects = () => {
     },
 
     // MOTION GRAPHICS
-{
-  title: 'Isometrik Animation',
-  category: 'Motion Graphics',
-  type: 'video',
-  file: '/portfolio/motion-graphics/Irfan Maulana ( 15 ) - Isometrik.mp4',
-},
-{
-  title: 'Isometrik - PH',
-  category: 'Motion Graphics',
-  type: 'video',
-  file: '/portfolio/motion-graphics/Isometrik - PH (Irfan Maulana 15).mp4',
-},
+    {
+      title: 'Isometrik Animation',
+      category: 'Motion Graphics',
+      type: 'video',
+      file: '/portfolio/motion-graphics/Irfan Maulana ( 15 ) - Isometrik.mp4',
+    },
+    {
+      title: 'Isometrik - PH',
+      category: 'Motion Graphics',
+      type: 'video',
+      file: '/portfolio/motion-graphics/Isometrik - PH (Irfan Maulana 15).mp4',
+    },
 
     // VIDEO EDITING
     {
@@ -341,23 +342,52 @@ const Projects = () => {
                       ))}
                     </div>
 
-                    <div className="flex items-center justify-between border-t border-white/10 pt-5">
+                    {/* PROJECT LINKS */}
+                    <div className="flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-5">
                       <span className="text-xs text-gray-400">
                         {project.status}
                       </span>
 
-                      {project.link && (
-                        <a
-                          href={project.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex items-center gap-2 text-sm font-semibold text-purple-400 transition hover:text-purple-300"
-                        >
-                          <Code2 size={17} />
-                          View Project
-                          <ExternalLink size={15} />
-                        </a>
-                      )}
+                      <div className="flex flex-wrap items-center gap-4">
+                        {project.link && (
+                          <a
+                            href={project.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2 text-sm font-semibold text-purple-400 transition hover:text-purple-300"
+                          >
+                            <Code2 size={17} />
+                            View Project
+                            <ExternalLink size={15} />
+                          </a>
+                        )}
+
+                        {project.github && (
+                          <a
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2 text-sm font-semibold text-purple-400 transition hover:text-purple-300"
+                          >
+                            <Code2 size={17} />
+                            GitHub
+                            <ExternalLink size={15} />
+                          </a>
+                        )}
+
+                        {project.demo && (
+                          <a
+                            href={project.demo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2 text-sm font-semibold text-purple-400 transition hover:text-purple-300"
+                          >
+                            <Eye size={17} />
+                            Live Demo
+                            <ExternalLink size={15} />
+                          </a>
+                        )}
+                      </div>
                     </div>
                   </div>
                 );
@@ -433,7 +463,7 @@ const Projects = () => {
 
             {/* CREATIVE GALLERY */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filteredWorks.map((work, index) => {
+              {filteredWorks.map((work) => {
                 const FileIcon = getFileIcon(work.type);
 
                 return (
